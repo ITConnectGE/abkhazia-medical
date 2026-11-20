@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>სამედიცინო ცენტრი აფხაზეთი • Medical Center Abkhazia</title>
+  <meta name="description" content="სამედიცინო ცენტრი აფხაზეთი — კლინიკების ქსელი თბილისსა და დასავლეთ საქართველოში. ერთად — ერთმანეთისთვის.">
+  <link rel="icon" href="assets/img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ========== SVG sprite ========== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lgGreen" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#22b573"/><stop offset="1" stop-color="#3d7a6f"/></linearGradient>
+    <linearGradient id="lgBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a6e98"/><stop offset=".7" stop-color="#0b5384"/><stop offset="1" stop-color="#03407a"/></linearGradient>
+    <clipPath id="crossClip"><path d="M40 15h20a5 5 0 0 1 5 5v15h15a5 5 0 0 1 5 5v20a5 5 0 0 1-5 5H65v15a5 5 0 0 1-5 5H40a5 5 0 0 1-5-5V65H20a5 5 0 0 1-5-5V40a5 5 0 0 1 5-5h15V20a5 5 0 0 1 5-5z"/></clipPath>
+  </defs>
+  <symbol id="logo" viewBox="15 15 70 70">
+    <g clip-path="url(#crossClip)">
+      <rect width="100" height="100" fill="url(#lgBlue)"/>
+      <path d="M0 0H100V56L88 52C80 48 75 50 65 50C52 50 45 38 30 33L0 28Z" fill="url(#lgGreen)"/>
+      <path d="M30 33C45 38 52 50 65 50C75 50 80 48 88 52L100 56" fill="none" stroke="#fff" stroke-width="2.4"/>
+    </g>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" fill="currentColor" fill-opacity=".12" stroke="none"/><path d="M8 12.5l2.5 2.5L16 9.5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M23 7l-6 5 6 5z"/></symbol>
+  <!-- service icons -->
+  <symbol id="s-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/><path d="M3 12h4l2-3 3 6 2-3h7"/></symbol>
+  <symbol id="s-steth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v6a5 5 0 0 0 10 0V3"/><path d="M10 14v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></symbol>
+  <symbol id="s-lab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6M10 2v6L4 19a2 2 0 0 0 1.8 3h12.4a2 2 0 0 0 1.8-3L14 8V2"/><path d="M7 15h10"/></symbol>
+  <symbol id="s-scan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="4"/></symbol>
+  <symbol id="s-baby" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M9 10h.01M15 10h.01M9.5 15a3.5 3.5 0 0 0 5 0"/></symbol>
+  <symbol id="s-tooth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5C10 3 4 3 4 8c0 3 1 5 2 8s1.5 5 3 5 1.5-6 3-6 1.5 6 3 6 2-2 3-5 2-5 2-8c0-5-6-5-8-2.5z"/></symbol>
+  <symbol id="s-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v.1A3 3 0 0 0 4.5 9 3 3 0 0 0 4 14a3 3 0 0 0 3 4.5A2.5 2.5 0 0 0 9.5 22h.5V2z"/><path d="M14.5 2A2.5 2.5 0 0 1 17 4.5v.1A3 3 0 0 1 19.5 9a3 3 0 0 1 .5 5 3 3 0 0 1-3 4.5 2.5 2.5 0 0 1-2.5 3.5H14V2z"/></symbol>
+  <symbol id="s-amb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 17V7a1 1 0 0 1 1-1h11v11"/><path d="M13 9h5l4 4v4h-2"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="17.5" cy="17.5" r="2"/><path d="M7 9v4M5 11h4"/></symbol>
+  <!-- socials -->
+  <symbol id="so-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.6c0-.9.6-1.1 1-1.1h2.6V1.6L14 1.5c-4 0-4.9 3-4.9 4.9v2.1H6.8v4H9.1V22.5H14V12.5h3.3l.4-4z"/></symbol>
+  <symbol id="so-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r=".9" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="so-yt" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></symbol>
+  <symbol id="so-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v12H3zM9.5 9.5h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6v6.3h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7h-4z"/></symbol>
+  <symbol id="so-tt" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-1.8-2.5V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.3 7.3 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></symbol>
+</svg>
+
+<!-- ========== Topbar ========== -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span><svg><use href="#i-clock"/></svg>ორშ–შაბ: 09:00 – 18:00</span>
+      <span><svg><use href="#i-mail"/></svg>infodiomedi@gmail.com</span>
+      <span><svg><use href="#i-pin"/></svg>10 კლინიკა საქართველოს მასშტაბით</span>
+    </div>
+    <div class="topbar-right">
+      <div class="socials-mini">
+        <a href="https://www.facebook.com/MedicalCenterAbkhazia/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#so-fb"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg><use href="#so-ig"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg><use href="#so-yt"/></svg></a>
+      </div>
+      <div class="lang"><button class="active">GE</button><button>EN</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== Header ========== -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="#" class="brand" aria-label="მთავარი">
+      <svg><use href="#logo"/></svg>
+      <span class="brand-text"><small>სამედიცინო ცენტრი</small><strong>აფხაზეთი</strong></span>
+    </a>
+
+    <nav class="nav" aria-label="მთავარი ნავიგაცია">
+      <ul>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">ჩვენს შესახებ <svg><use href="#i-chev"/></svg></a>
+          <div class="dropdown">
+            <a href="#about"><span class="di"><svg><use href="#i-info"/></svg></span>კლინიკის შესახებ</a>
+            <a href="#about" data-mv="mission"><span class="di"><svg><use href="#i-target"/></svg></span>მისია</a>
+            <a href="#about" data-mv="vision"><span class="di"><svg><use href="#i-eye"/></svg></span>ხედვა</a>
+            <a href="#about"><span class="di"><svg><use href="#i-users"/></svg></span>მმართველი გუნდი</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#clinics" class="nav-link">კლინიკები <svg><use href="#i-chev"/></svg></a>
+          <div class="dropdown mega" id="megaClinics">
+            <div class="mega-title"><span>ჩვენი კლინიკები</span><span>10 ფილიალი</span></div>
+            <!-- filled by JS -->
+          </div>
+        </li>
+        <li class="nav-item"><a href="#services" class="nav-link">სერვისები</a></li>
+        <li class="nav-item"><a href="#news" class="nav-link">სიახლეები</a></li>
+        <li class="nav-item">
+          <a href="#library" class="nav-link">ბიბლიოთეკა <svg><use href="#i-chev"/></svg></a>
+          <div class="dropdown">
+            <a href="#library" data-lib="blog"><span class="di"><svg><use href="#i-book"/></svg></span>ბლოგი</a>
+            <a href="#library" data-lib="gallery"><span class="di"><svg><use href="#i-image"/></svg></span>ფოტოგალერეა</a>
+            <a href="#library" data-lib="video"><span class="di"><svg><use href="#i-video"/></svg></span>ვიდეო</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#contact" class="btn btn-primary">ჩაწერა ვიზიტზე <svg><use href="#i-arrow"/></svg></a>
+      <button class="burger" id="burger" aria-label="მენიუ"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mn-head">
+    <a href="#" class="brand"><svg><use href="#logo"/></svg><span class="brand-text"><small>სამედიცინო ცენტრი</small><strong>აფხაზეთი</strong></span></a>
+    <button class="burger" style="display:grid" id="closeNav" aria-label="დახურვა"><svg><use href="#i-close"/></svg></button>
+  </div>
+  <details><summary>ჩვენს შესახებ</summary><div><a href="#about">კლინიკის შესახებ</a><a href="#about">მისია</a><a href="#about">ხედვა</a><a href="#about">მმართველი გუნდი</a></div></details>
+  <details><summary>კლინიკები</summary><div id="mobileClinics"></div></details>
+  <details><summary>სერვისები</summary><div><a href="#services">ყველა სერვისი</a></div></details>
+  <details><summary>სიახლეები</summary><div><a href="#news">ყველა სიახლე</a></div></details>
+  <details><summary>ბიბლიოთეკა</summary><div><a href="#library">ბლოგი</a><a href="#library">ფოტოგალერეა</a><a href="#library">ვიდეო</a></div></details>
+  <a href="#contact" class="btn btn-primary" style="margin-top:28px">ჩაწერა ვიზიტზე</a>
+</div>
+
+<main>
+<!-- ========== Hero ========== -->
+<section class="hero">
+  <div class="hero-bg"><img src="assets/img/p6.jpg" alt="სამედიცინო ცენტრი აფხაზეთის შენობა"></div>
+  <div class="container">
+    <div class="reveal">
+      <span class="pill"><b>ახალი</b> მემორანდუმი სოხუმის სახელმწიფო უნივერსიტეტთან</span>
+      <h1>ერთად —<br><span>ერთმანეთისთვის</span></h1>
+      <p class="lead">თანამედროვე სამედიცინო მომსახურება, გამოცდილი ექიმები და ზრუნვა, რომელსაც ენდობით — თბილისიდან ზუგდიდამდე, 10 კლინიკაში.</p>
+      <div class="hero-actions">
+        <a href="#clinics" class="btn btn-primary">იპოვე კლინიკა <svg><use href="#i-arrow"/></svg></a>
+        <a href="#services" class="btn btn-ghost">ჩვენი სერვისები</a>
+      </div>
+    </div>
+
+    <form class="hero-card reveal" id="contact" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ მოთხოვნა გაგზავნილია';">
+      <h3>ჩაწერა ვიზიტზე</h3>
+      <p>შეავსეთ ფორმა და ოპერატორი დაგიკავშირდებათ</p>
+      <div class="field"><label>კლინიკა</label><select id="formClinic"></select></div>
+      <div class="field"><label>მიმართულება</label>
+        <select><option>ოჯახის მედიცინა</option><option>კარდიოლოგია</option><option>პედიატრია</option><option>ლაბორატორია</option><option>დიაგნოსტიკა</option></select>
+      </div>
+      <div class="field"><label>ტელეფონი</label><input type="tel" placeholder="5XX XX XX XX"></div>
+      <button class="btn btn-primary" type="submit">გაგზავნა <svg><use href="#i-arrow"/></svg></button>
+    </form>
+  </div>
+
+  <div class="hero-stats">
+    <div class="container">
+      <div class="wrap">
+        <div class="stat"><strong data-count="10">0</strong><span>კლინიკა</span></div>
+        <div class="stat"><strong data-count="150" data-suffix="+">0</strong><span>ექიმი და სპეციალისტი</span></div>
+        <div class="stat"><strong data-count="25" data-suffix="+">0</strong><span>სამედიცინო მიმართულება</span></div>
+        <div class="stat"><strong data-count="50" data-suffix="K+">0</strong><span>პაციენტი წელიწადში</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== About ========== -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <div class="main"><img src="assets/img/p5.jpg" alt="კლინიკის შენობა"></div>
+      <div class="float"><img src="assets/img/p2.jpg" alt="გუნდი"></div>
+      <div class="about-badge">
+        <div class="ic"><svg><use href="#i-shield"/></svg></div>
+        <div><strong>სანდო სამედიცინო ქსელი</strong><span>თბილისი და დასავლეთ საქართველო</span></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">ჩვენს შესახებ</span>
+      <h2 class="h2">ჯანმრთელობაზე ზრუნვა, <span class="grad-text">რომელიც ახლოსაა</span></h2>
+      <p class="lead">„სამედიცინო ცენტრი აფხაზეთი" აერთიანებს კლინიკებს თბილისსა და რეგიონებში და ყველა პაციენტს სთავაზობს ხელმისაწვდომ, ხარისხიან და თანამედროვე სამედიცინო მომსახურებას.</p>
+
+      <div class="mv-tabs" role="tablist">
+        <button class="active" data-tab="mission">მისია</button>
+        <button data-tab="vision">ხედვა</button>
+        <button data-tab="team">მმართველი გუნდი</button>
+      </div>
+      <div class="mv-panel active" id="mv-mission">
+        <p>ჩვენი მისიაა, ყველა პაციენტს — მიუხედავად საცხოვრებელი ადგილისა — მივაწოდოთ თანაბრად მაღალი ხარისხის სამედიცინო მომსახურება.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>პაციენტზე ორიენტირებული მიდგომა</li>
+          <li><svg><use href="#i-check"/></svg>თანამედროვე დიაგნოსტიკა და მკურნალობა</li>
+          <li><svg><use href="#i-check"/></svg>ხელმისაწვდომობა ყველა რეგიონში</li>
+        </ul>
+      </div>
+      <div class="mv-panel" id="mv-vision">
+        <p>ვიყოთ საქართველოში ყველაზე სანდო რეგიონული სამედიცინო ქსელი, რომელიც აერთიანებს გამოცდილებას, ინოვაციასა და ადამიანურ სითბოს.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>ციფრული სერვისები პაციენტებისთვის</li>
+          <li><svg><use href="#i-check"/></svg>თანამშრომლობა უნივერსიტეტებთან</li>
+          <li><svg><use href="#i-check"/></svg>უწყვეტი პროფესიული განვითარება</li>
+        </ul>
+      </div>
+      <div class="mv-panel" id="mv-team">
+        <p>ცენტრს ხელმძღვანელობს გამოცდილი მენეჯმენტი, რომელიც აერთიანებს ჯანდაცვის, ადმინისტრირებისა და საზოგადოებრივი ჯანმრთელობის სპეციალისტებს.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg>გენერალური დირექტორი — სახელი გვარი</li>
+          <li><svg><use href="#i-check"/></svg>სამედიცინო დირექტორი — სახელი გვარი</li>
+          <li><svg><use href="#i-check"/></svg>ფინანსური დირექტორი — სახელი გვარი</li>
+        </ul>
+      </div>
+      <div class="about-actions">
+        <a href="#" class="btn btn-primary">გაიგე მეტი <svg><use href="#i-arrow"/></svg></a>
+        <a href="#clinics" class="btn btn-outline">ჩვენი კლინიკები</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Clinics ========== -->
+<section class="section clinics" id="clinics">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow light">კლინიკები</span>
+        <h2 class="h2">10 კლინიკა — ერთი სტანდარტი</h2>
+        <p class="lead">აირჩიეთ კლინიკა და ნახეთ სამუშაო საათები, საკონტაქტო ინფორმაცია და ექიმების ჩამონათვალი.</p>
+      </div>
+      <div class="region-filter" id="regionFilter">
+        <button class="active" data-region="all">ყველა</button>
+        <button data-region="tbilisi">თბილისი</button>
+        <button data-region="west">რეგიონები</button>
+      </div>
+    </div>
+
+    <div class="clinic-layout reveal">
+      <div class="clinic-list" id="clinicList"></div>
+      <div class="clinic-detail" id="clinicDetail"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Services ========== -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">სერვისები</span>
+        <h2 class="h2">სრული სამედიცინო მომსახურება<br>ერთ სივრცეში</h2>
+      </div>
+      <a href="#" class="btn btn-outline">ყველა სერვისი <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="svc-grid">
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-steth"/></svg></div><h3>ოჯახის მედიცინა</h3><p>პირველადი ჯანდაცვა და პროფილაქტიკური გასინჯვები.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-heart"/></svg></div><h3>კარდიოლოგია</h3><p>ეკგ, ექოკარდიოგრაფია და გულის დაავადებების მართვა.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-lab"/></svg></div><h3>ლაბორატორია</h3><p>სწრაფი და ზუსტი ლაბორატორიული კვლევები.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-scan"/></svg></div><h3>დიაგნოსტიკა</h3><p>ულტრაბგერა, რენტგენი და ინსტრუმენტული კვლევები.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-baby"/></svg></div><h3>პედიატრია</h3><p>ბავშვის ჯანმრთელობაზე ზრუნვა დაბადებიდან.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-brain"/></svg></div><h3>ნევროლოგია</h3><p>ნერვული სისტემის დაავადებების დიაგნოსტიკა.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-tooth"/></svg></div><h3>სტომატოლოგია</h3><p>თერაპიული და ესთეტიკური სტომატოლოგია.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+      <a href="#" class="svc reveal"><div class="svc-ic"><svg><use href="#s-amb"/></svg></div><h3>გადაუდებელი დახმარება</h3><p>სასწრაფო სამედიცინო მომსახურება რეგიონებში.</p><span class="more">დეტალურად <svg><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== News ========== -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">სიახლეები</span>
+        <h2 class="h2">რა ხდება ჩვენთან</h2>
+      </div>
+      <a href="https://www.facebook.com/MedicalCenterAbkhazia/" target="_blank" rel="noopener" class="btn btn-outline">ყველა სიახლე <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="news-grid">
+      <a href="#" class="news-card big reveal">
+        <div class="nc-img"><img src="assets/img/p1.jpg" alt="მემორანდუმის გაფორმება"></div>
+        <div class="nc-body">
+          <div class="nc-meta"><span class="chip">პარტნიორობა</span><span>13 ნოემბერი, 2026</span></div>
+          <h3>„სამედიცინო ცენტრ აფხაზეთსა" და სოხუმის სახელმწიფო უნივერსიტეტს შორის მემორანდუმი გაფორმდა</h3>
+          <p>თანამშრომლობა ითვალისწინებს სტუდენტთა პრაქტიკას, ერთობლივ კვლევებსა და პროფესიულ განვითარებას.</p>
+        </div>
+      </a>
+      <div class="news-side">
+        <a href="#" class="news-card small reveal">
+          <div class="nc-img"><img src="assets/img/p4.jpg" alt="ფილტვის კიბოს ცნობიერების თვე"></div>
+          <div class="nc-body">
+            <div class="nc-meta"><span class="chip">ცნობიერება</span><span>ნოემბერი</span></div>
+            <h3>ნოემბერი — ფილტვის კიბოს ცნობიერების ამაღლების თვე</h3>
+            <p>ნუ დაელოდები სიმპტომებს, ჩაიტარე სკრინინგი!</p>
+          </div>
+        </a>
+        <a href="#" class="news-card small reveal">
+          <div class="nc-img"><img src="assets/img/p7.jpg" alt="ახალი კლინიკის პროექტი"></div>
+          <div class="nc-body">
+            <div class="nc-meta"><span class="chip">განვითარება</span><span>ოქტომბერი</span></div>
+            <h3>ახალი კლინიკის შენობის პროექტი წარმოდგენილია</h3>
+            <p>თანამედროვე ინფრასტრუქტურა და კომფორტული გარემო პაციენტებისთვის.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Library ========== -->
+<section class="section services" id="library">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">ბიბლიოთეკა</span>
+        <h2 class="h2">ბლოგი, ფოტო და ვიდეო</h2>
+      </div>
+      <div class="lib-tabs" id="libTabs">
+        <button data-lib="gallery" class="active"><svg><use href="#i-image"/></svg>ფოტოგალერეა</button>
+        <button data-lib="blog"><svg><use href="#i-book"/></svg>ბლოგი</button>
+        <button data-lib="video"><svg><use href="#i-video"/></svg>ვიდეო</button>
+      </div>
+    </div>
+
+    <div class="lib-panel active" id="lib-gallery">
+      <div class="gallery">
+        <div class="g-item wide tall"><img src="assets/img/p6.jpg" alt=""></div>
+        <div class="g-item"><img src="assets/img/p1.jpg" alt=""></div>
+        <div class="g-item"><img src="assets/img/p3.jpg" alt=""></div>
+        <div class="g-item wide"><img src="assets/img/p2.jpg" alt=""></div>
+        <div class="g-item wide"><img src="assets/img/p8.jpg" alt=""></div>
+        <div class="g-item"><img src="assets/img/p5.jpg" alt=""></div>
+        <div class="g-item"><img src="assets/img/p4.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="lib-panel" id="lib-blog">
+      <div class="blog-grid">
+        <a href="#" class="blog-card"><span class="chip">პროფილაქტიკა</span><h3>რატომ არის მნიშვნელოვანი წლიური სამედიცინო შემოწმება</h3><p>რეგულარული გასინჯვა დაავადებების ადრეულ ეტაპზე გამოვლენის საუკეთესო საშუალებაა.</p><div class="author"><span class="doc-av">ნგ</span>ექიმი-თერაპევტი</div></a>
+        <a href="#" class="blog-card"><span class="chip">კარდიოლოგია</span><h3>გულის ჯანმრთელობა: 5 მარტივი ჩვევა ყოველდღიურად</h3><p>ფიზიკური აქტივობა, კვება და სტრესის მართვა — რას გვირჩევენ კარდიოლოგები.</p><div class="author"><span class="doc-av">გბ</span>კარდიოლოგი</div></a>
+        <a href="#" class="blog-card"><span class="chip">პედიატრია</span><h3>ბავშვის ვაქცინაციის კალენდარი — რა უნდა იცოდეთ</h3><p>სრული გზამკვლევი მშობლებისთვის ასაკობრივი ვაქცინაციის შესახებ.</p><div class="author"><span class="doc-av">მქ</span>პედიატრი</div></a>
+      </div>
+    </div>
+
+    <div class="lib-panel" id="lib-video">
+      <div class="video-grid">
+        <div class="video"><img src="assets/img/p8.jpg" alt=""><span class="play"><svg><use href="#i-play"/></svg></span><div class="vcap"><h4>ახალი კლინიკის ვირტუალური ტური</h4><span>2:45 წთ</span></div></div>
+        <div class="video-side">
+          <div class="video"><img src="assets/img/p2.jpg" alt=""><span class="play"><svg><use href="#i-play"/></svg></span><div class="vcap"><h4>მემორანდუმის ხელმოწერა</h4><span>1:20 წთ</span></div></div>
+          <div class="video"><img src="assets/img/p5.jpg" alt=""><span class="play"><svg><use href="#i-play"/></svg></span><div class="vcap"><h4>ერთად — ერთმანეთისთვის</h4><span>0:58 წთ</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="section cta" style="padding-top:110px">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div>
+        <h2>გჭირდებათ კონსულტაცია?</h2>
+        <p>დაგვირეკეთ ან დატოვეთ მოთხოვნა — ჩვენი ოპერატორი დაგეხმარებათ უახლოესი კლინიკისა და ექიმის შერჩევაში.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+995000000000" class="cta-phone"><span class="ic"><svg><use href="#i-phone"/></svg></span><span><small>ცხელი ხაზი</small><strong>+995 XXX XX XX XX</strong></span></a>
+        <a href="#contact" class="btn btn-white">ჩაწერა ვიზიტზე <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="#" class="brand"><svg><use href="#logo"/></svg><span class="brand-text"><small>სამედიცინო ცენტრი</small><strong>აფხაზეთი</strong></span></a>
+      <div class="slogan">ერთად —<br><span>ერთმანეთისთვის</span></div>
+      <p>კლინიკების ქსელი თბილისსა და დასავლეთ საქართველოში.</p>
+    </div>
+    <div>
+      <h4>ნავიგაცია</h4>
+      <ul class="f-links">
+        <li><a href="#about">ჩვენს შესახებ</a></li>
+        <li><a href="#clinics">კლინიკები</a></li>
+        <li><a href="#services">სერვისები</a></li>
+        <li><a href="#news">სიახლეები</a></li>
+        <li><a href="#library">ბიბლიოთეკა</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>კონტაქტი</h4>
+      <ul class="f-contact">
+        <li><svg><use href="#i-clock"/></svg><span><b>სამუშაო დღეები და საათები</b>ორშ–შაბ: 09:00 – 18:00</span></li>
+        <li><svg><use href="#i-pin"/></svg><span><b>მისამართი</b>ქ. თბილისი, მისამართი დასაზუსტებელია</span></li>
+        <li><svg><use href="#i-phone"/></svg><span><b>ტელეფონი</b>+995 XXX XX XX XX</span></li>
+        <li><svg><use href="#i-mail"/></svg><span><b>ელ-ფოსტა</b>infodiomedi@gmail.com</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>გამოგვყევით</h4>
+      <div class="f-social">
+        <a href="https://www.facebook.com/MedicalCenterAbkhazia/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#so-fb"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg><use href="#so-ig"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg><use href="#so-yt"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg><use href="#so-in"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg><use href="#so-tt"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 სამედიცინო ცენტრი აფხაზეთი. ყველა უფლება დაცულია.</span>
+    <span>კონფიდენციალურობის პოლიტიკა · წესები და პირობები</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><button aria-label="დახურვა">×</button><img alt=""></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
